@@ -30,8 +30,8 @@ $result = mysqli_query($conn, $query);
  if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
 
-		//echo "true";
-		echo "Welcome " . $row["UserName"]. "!<br>";
+		echo "true";
+		//echo "Welcome " . $row["UserName"]. "!<br>";
 //$_SESSION['UserName']=$row['UserName'];
 			}
 			 } else {
