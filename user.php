@@ -20,7 +20,7 @@
 //or die("Could not connect database");
 //mysql_select_db($mysql_db_database, $con)or die("Could not select database");
 
-$query = "SELECT UserName
+$query = "SELECT UserName, Password
 FROM user
 WHERE UserName='$UserName' AND Password='$Password'";
 
