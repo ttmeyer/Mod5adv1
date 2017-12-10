@@ -22,7 +22,7 @@
 
 $query = "SELECT UserName
 FROM user
-WHERE UserName='$username' AND Password='$password' LIMIT 1";
+WHERE UserName = '$username' AND Password='$password' LIMIT 1";
 
 $result = mysqli_query($conn, $query);
 //$num_row = mysql_num_rows($result);
@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $query);
 	while ($row = mysqli_fetch_assoc($result)) {
 
 		//echo "true";
-		echo "Welcome " . $row["UserName"]. "!<br>";
+		echo "Welcome " . $row["username"]. "!<br>";
 //$_SESSION['UserName']=$row['UserName'];
 			}
 			 } else {
