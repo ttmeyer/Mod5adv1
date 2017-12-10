@@ -22,7 +22,7 @@
 
 $query = "SELECT UserName, Password
 FROM user
-WHERE UserName='$UserName' AND Password='$Password'";
+WHERE UserName='$UserName' AND Password='$Password' LIMIT 1";
 
 $result = mysqli_query($conn, $query);
 //$num_row = mysql_num_rows($result);
