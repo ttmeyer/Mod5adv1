@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $query);
 	while ($row = mysqli_fetch_assoc($result)) {
 
 		//echo "true";
-		echo "Welcome " . $row["username"]. "!<br>";
+		echo "Welcome " . $row["UserName"]. "!<br>";
 //$_SESSION['UserName']=$row['UserName'];
 			}
 			 } else {
