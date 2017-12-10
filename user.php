@@ -4,7 +4,7 @@
 <?php
 
 // connect to server
-	include'open_config.php';
+	include 'open_config.php';
 
 //	session_start();
 	$username = (isset($_POST['UserName'])    ? $_POST['UserName']   : '');
@@ -20,25 +20,27 @@
 //or die("Could not connect database");
 //mysql_select_db($mysql_db_database, $con)or die("Could not select database");
 
-$query = "SELECT UserName FROM user WHERE UserName='$UserName' AND Password='$Password'";
+$query = "SELECT UserName
+FROM user
+WHERE UserName='$UserName' AND Password='$Password'";
+
 $result = mysqli_query($conn, $query);
 //$num_row = mysql_num_rows($result);
 //$row=mysql_fetch_array($result);
  if (mysqli_num_rows($result) > 0) {
-	while($row = mysqli_fetch_assoc($result)) {
+	while ($row = mysqli_fetch_assoc($result)) {
 
-echo 'true';
-echo "Welcome " . $row["UserName"]. "!<br>";
+		echo 'true';
+		echo "Welcome " . $row["UserName"]. "!<br>";
 //$_SESSION['UserName']=$row['UserName'];
-}
- }else{
-echo 'false';
+			}
+			 } else {
+			echo 'false';
 }
 
 
 
  ?>
- 
+
  </body>
  </html>
- 
