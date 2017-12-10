@@ -30,18 +30,21 @@
           <p>Log in and start communicating!</p>
           <!-- form here
           -->
-          <form action="user.php">
+          <!-- <form action="user.php"> -->
+            <form method="post" action="user.php">
+
 
           	<div class="container">
           	<!--<form method="post" action="<?php echo htmlspecialchars($_server["PHP_SELF"]);?>">-->
            	<label><b>Username</b></label>
-            <input type="text" Placeholder="Use Landlord" name="UserName" id = "UserName" required >
+            <input type="text" Placeholder="Use Landlord" name = "UserName" id = "UserName" required >
 
             <label><b>Password</b></label>
-            <input type="password" placeholder ="use 1234" name="Password" id="Password" required >
+            <input type="password" placeholder ="use 1234" name = "Password" id ="Password" required >
 
+            <input name="find" type="submit" id="find" value="Login">
 
-            <button type="submit">Log In</button>
+            <!-- <button type="submit">Log In</button> -->
 
             </div>
 
