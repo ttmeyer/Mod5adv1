@@ -38,6 +38,7 @@ $result = mysqli_query($conn, $query);
 			echo 'false';
 }
 
+mysqli_close($conn);
 
 
  ?>
