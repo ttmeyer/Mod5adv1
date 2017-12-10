@@ -20,9 +20,9 @@
 //or die("Could not connect database");
 //mysql_select_db($mysql_db_database, $con)or die("Could not select database");
 
-$query = "SELECT UserName, Password
+$query = "SELECT UserName
 FROM user
-WHERE UserName='$UserName' AND Password='$Password' LIMIT 1";
+WHERE UserName='$username' AND Password='$password' LIMIT 1";
 
 $result = mysqli_query($conn, $query);
 //$num_row = mysql_num_rows($result);
