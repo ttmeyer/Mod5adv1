@@ -10,14 +10,13 @@
 <link href="styles/custom.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
-
 </head>
 
 <body>
 
 <?php
 
-// connect to server
+ // connect to server
 	include 'open_config.php';
 
 //	session_start();
@@ -33,14 +32,16 @@ $result = mysqli_query($conn, $query);
 if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
 
-		header('location: index.html');
+		fopen("Landlord.html")
+		//header('location: index.html');
 
 		//echo "true";
 
 		}
 
 		} else {
-		header("location: Landlord.html");
+		fopen("index.html")
+		//header("location: Landlord.html");
 		//echo "false";
 		}
 
