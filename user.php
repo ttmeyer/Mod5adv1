@@ -32,17 +32,17 @@ $result = mysqli_query($conn, $query);
 if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
 
-		$file=fopen("Landlord.html","r")
+		//$file = fopen ("Landlord.html","r")
 		//header('location: index.html');
 
-		//echo "true";
+		echo "true";
 
 		}
 
 		} else {
-		$file=fopen("index.html","r")
+		//$file = fopen ("index.html","r")
 		//header("location: Landlord.html");
-		//echo "false";
+		echo "false";
 		}
 
 mysqli_close($conn);
