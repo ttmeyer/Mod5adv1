@@ -32,13 +32,15 @@ $result = mysqli_query($conn, $query);
 if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
 
-		//echo $_Post[hr
-		echo "true";
+		header('location: Landlord.html');
+
+		//echo "true";
 
 		}
 
 		} else {
-		echo "false";
+		header('location: index.html')
+		//echo "false";
 		}
 
 mysqli_close($conn);
