@@ -32,14 +32,14 @@ $result = mysqli_query($conn, $query);
 if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
 
-		header('location: Landlord.html');
+		header('location: /Landlord.html');
 
 		//echo "true";
 
 		}
 
 		} else {
-		header('location: index.html')
+		header('location: /index.html');
 		//echo "false";
 		}
 
