@@ -14,65 +14,6 @@
 
 <body>
 
-<div data-role="page" id="Home">
-  	<div class="container">
-    <div class="form-group" align="center" Style = "background-color: #009933" >
-<br>
-<img  src="images/Logo1.jpg" alt="" width="250" align = "center" > <br>
-<br>
-</div>
-<section>
-  <div class="jumbotron text-center" >
-    <div class="container">
-      <div class="row">
-        <div class="col-xs12">
-         <h1>Tenant Communicator</h1>
-          <p>Log in and start communicating!</p>
-          <!-- form here
-          -->
-          <!-- <form action="user.php"> -->
-            <form method="post" action="user.php">
-          	<div class="container">
-
-           	<label><b>Username</b></label>
-            <input type="text" Placeholder="Use Landlord" name = "UserName" id = "UserName" required >
-
-            <label><b>Password</b></label>
-            <input type="password" placeholder ="use 1234" name = "Password" id ="Password" required >
-
-            <input name="find" type="submit" id="find" value="Login">
-            
-            <!--<script>-->
-            
-			<!--<a href="#FWD">Forward an issue</a>
-			-->	
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-<!--footer descr -->
-<hr>
-<section>
-<footer class="text-center" >
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-      	<div Style = "background-color: #009933">
-       <p style= "color:white;"> © 2017 Tom Meyer. All Rights Reserved.</p>
-
-      	</div>
-       </div>
-    </div>
-  </div>
-</footer>
-</section>
-</div>
-
 <!-- LANDLORD PAGE -->
 <div data-role="page" id="Landlord">
 <!--From Here -->
@@ -421,7 +362,7 @@
          <h1>Tenant Communicator</h1>
           <p>You have sucessfully logged out</p>
           <br>
-          <a class="btn btn-primary btn-lg" href="#Home" data-transition="slide" role="button" name="BackHome">Log Back In</a>
+          <a class="btn btn-primary btn-lg" href="index.html" Target="_self" data-transition="slide" role="button" name="BackHome">Log Back In</a>
         </div>
       </div>
     </div>

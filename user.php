@@ -35,14 +35,15 @@ if (mysqli_num_rows($result) > 0) {
 		//$file = fopen ("Landlord.html","r")
 		//header('location: index.html');
 
-		echo "true";
+		header("location: http://tenantcommunicator.azurewebsites.net/landlord.html");
+		//echo "true";
 
 		}
 
 		} else {
 		//$file = fopen ("index.html","r")
 		//header("location: Landlord.html");
-		echo "false";
+		header("location: http://tenantcommunicator.azurewebsites.net/index.html");
 		}
 
 mysqli_close($conn);
