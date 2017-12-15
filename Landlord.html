@@ -12,34 +12,43 @@
 <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
 
 <script>
-  	var Notification = window.Notification || window.mozNotification || window.webkitNotification;
+	var Notification = window.Notification || window.mozNotification || window.webkitNotification;
 
-  	Notification.requestPermission(function (permission) {
-  		// console.log(permission);
-  	});
+	Notification.requestPermission(function (permission) {
+		// console.log(permission);
+	});
 
-  	function show() {
-  		var instance = new Notification(
-  			"Thank you!", {
-  				body: "Thank you for opting in to Tenant Communicator"
-  			}
-  		);
+  <script>
+	var Notification = window.Notification || window.mozNotification || window.webkitNotification;
 
-  		instance.onclick = function () {
-  			// Something to do
-  		};
-  		instance.onerror = function () {
-  			// Something to do
-  		};
-  		instance.onshow = function () {
-  			// Something to do
-  		};
-  		instance.onclose = function () {
-  			// Something to do
-  		};
+	Notification.requestPermission(function (permission) {
+		// console.log(permission);
+	});
 
-  		return false;
-  	}
+	function show() {
+		var instance = new Notification(
+			"Thank You", {
+				body: "Thank you for opting in!",
+				icon: "data:image/jpeg;base64,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"
+
+			}
+		);
+
+		instance.onclick = function () {
+			// Something to do
+		};
+		instance.onerror = function () {
+			// Something to do
+		};
+		instance.onshow = function () {
+			// Something to do
+		};
+		instance.onclose = function () {
+			// Something to do
+		};
+
+		return false;
+	}
 </script>
 
 </head>
@@ -89,7 +98,7 @@
 <br>
        <div class="row">
         <div class="col-sm-4"><a class="btn btn-primary btn-lg" href="#FWD" role="button">Forward an Issue</a></div>
-        <div class="col-sm-4">use this button to forward an issue from a tenant to an aproved vendor.</div>
+        <div class="col-sm-4">use this button to forward an issue from a tenant to an approved vendor.</div>
        </div>
      </div>
 </section>
@@ -99,7 +108,7 @@
   <div class= "container">
     <div class = "row"
   <Br>
-    <a href="#" onclick="return show()">Push this button</a>
+    <a href="#" onclick="return show()">Click this link</a>
  <button type="button" class ="Col-sm-4" onclick="return show()">Push This Button</button>
 <!-- -->
 </div>
