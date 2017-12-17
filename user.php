@@ -21,6 +21,7 @@ if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
 
 		header("location: http://tenantcommunicator.azurewebsites.net/landlord1.html");
+		mysqli_close($conn);
 		}
 
 		} else {
