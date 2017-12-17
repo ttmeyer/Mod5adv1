@@ -1,34 +1,33 @@
 <!DOCTYPE html>
--<html lang="en">
 
 <body>
 
 <?php
 
  // connect to server
-	include 'open_config.php';
+		include 'open_config.php';
 
 //	session_start();
-	$username = (isset($_POST['UserName'])    ? $_POST['UserName']   : '');
-	$password = (isset($_POST['Password'])    ? $_POST['Password']   : '');
+		$username = (isset($_POST['UserName'])    ? $_POST['UserName']   : '');
+		$password = (isset($_POST['Password'])    ? $_POST['Password']   : '');
 
-$query = "SELECT UserName
-FROM user
-WHERE UserName = '$username' AND Password='$password' LIMIT 1";
+		$query = "SELECT UserName
+		FROM user
+		WHERE UserName = '$username' AND Password='$password' LIMIT 1";
 
-$result = mysqli_query($conn, $query);
+		$result = mysqli_query($conn, $query);
 
-if (mysqli_num_rows($result) > 0) {
-	while ($row = mysqli_fetch_assoc($result)) {
+		if (mysqli_num_rows($result) > 0) {
+			while ($row = mysqli_fetch_assoc($result)) {
 
-		header("location: http://tenantcommunicator.azurewebsites.net/landlord.html");
+				header("location: http://tenantcommunicator.azurewebsites.net/landlord.html");
 
-		}
+				}
 
-		} else {
+				} else {
 
- 		header("location: http://tenantcommunicator.azurewebsites.net/index.html");
-		}
+ 				header("location: http://tenantcommunicator.azurewebsites.net/index.html");
+				}
 
 mysqli_close($conn);
 
