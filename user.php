@@ -24,7 +24,7 @@ header('location: http://tenantcommunicator.azurewebsites.net/landlord.html');
 header('location: http://tenantcommunicator.azurewebsites.net/index.html');
 		}
 
-mysqli_close($conn);
+//mysqli_close($conn);
  ?>
 
  </body>
