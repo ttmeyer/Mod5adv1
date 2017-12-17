@@ -16,7 +16,7 @@ $result = mysqli_query($conn, $query);
 
  if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
-header('location: https://www.google.com/');
+header('location: http://www.google.com/');
 // http://tenantcommunicator.azurewebsites.net/landlord.html');
 		}
 
